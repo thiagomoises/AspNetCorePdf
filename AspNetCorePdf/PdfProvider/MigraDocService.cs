@@ -62,14 +62,14 @@ namespace AspNetCorePdf.PdfProvider
             // Because all styles are derived from Normal, the next line changes the 
             // font of the whole document. Or, more exactly, it changes the font of
             // all styles and paragraphs that do not redefine the font.
-            style.Font.Name = "Times New Roman";
+            style.Font.Name = "Tinos";
 
             // Heading1 to Heading9 are predefined styles with an outline level. An outline level
             // other than OutlineLevel.BodyText automatically creates the outline (or bookmarks) 
             // in PDF.
 
             style = document.Styles["Heading1"];
-            style.Font.Name = "Tahoma";
+            style.Font.Name = "Tinos";
             style.Font.Size = 14;
             style.Font.Bold = true;
             style.Font.Color = Colors.DarkBlue;
